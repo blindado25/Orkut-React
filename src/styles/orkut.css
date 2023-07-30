@@ -1,0 +1,75 @@
+/* tipos de format
+- opentype (OTP)
+- truetype (ttf)
+- embedded-opentype
+- truetupe-att
+- svg */
+
+* {
+    font-family: orkut;
+}
+
+body {
+    background-color: #D9E6F7;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.alinhamento div {
+    border-radius: 16px;
+}
+
+
+
+
+
+.foto-contem {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 4px 0 0;
+}
+
+.foto-topo-direito {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.alinhamento {
+    align-items: flex-start;
+    gap: 32px;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 1216px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 280px 592px 280px;
+}
+
+
+.rosa {
+    color: #ED2590;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.espaco {
+    padding: 80px 0 0;
+}
+
+.comunidades {
+    background-color: #FDFEFF;
+    height: 411px;
+}

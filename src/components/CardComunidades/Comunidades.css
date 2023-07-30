@@ -1,0 +1,66 @@
+.topo-direita {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: #4B4B4B;
+}
+
+.direita {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 32px;
+    width: 280px;
+}
+
+.amigos {
+    background-color: #FDFEFF;
+    height: 411px;
+    padding: 24px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 22px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.amigos p {
+    color: #4B4B4B;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    padding: 8px 0px 0px;
+}
+
+.amigos h1 {
+    display: flex;
+    justify-content: space-between;
+    grid-column: span 3;
+}
+
+.amigos a {
+    color: #4B4B4B;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.amigos img {
+    max-width: none;
+    margin: auto;
+}
+
+.amigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.comunidades {
+    background-color: #FDFEFF;
+    height: 411px;
+}
