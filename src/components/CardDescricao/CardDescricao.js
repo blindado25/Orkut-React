@@ -1,27 +1,13 @@
 import './CardDescricao.css';
 import '../Menu/reset.css';
-import { Icon1 } from "../Imagens/Icons/icon1.js";
-import { Icon2 } from "../Imagens/Icons/icon2.js";
-import { Icon3 } from "../Imagens/Icons/icon3.js";
-import { Icon4 } from "../Imagens/Icons/icon4.js";
+import { Star } from "../Star/Star";
+import { Smiley } from "../Smiley/Smiley";
+import { Like } from "../Like/Like";
+import { Heart } from "../Heart/Heart";
+
 
 
 export function CardDescricao() {
-    function legal() {
-        alert("Legal?");
-    }
-
-    function sexy() {
-        alert("Sexy?");
-    }
-
-    function smiley() {
-        alert("Confiável?");
-    }
-
-    function star() {
-        alert("Fã?");
-    }
 
     return (
 
@@ -37,46 +23,30 @@ export function CardDescricao() {
                 <p>
                     Fãs
                     <span>
-                        <button onClick={star}>
-                            <Icon1 />
-                        </button>
+                        <Star />
                         <span className="fas">85</span>
                     </span>
                 </p>
                 <p>
                     Confiável
                     <span>
-                        <button onClick={smiley}>
-                            <Icon2 />
-                        </button>
-                        <button onClick={smiley}>
-                            <Icon2 />
-                        </button>
+                        <Smiley />
+                        <Smiley />
                     </span>
                 </p>
                 <p>
                     Legal
                     <span>
-                        <button onClick={legal}>
-                            <Icon3 />
-                        </button>
-                        <button onClick={legal}>
-                            <Icon3 />
-                        </button>
-                        <button onClick={legal}>
-                            <Icon3 />
-                        </button>
+                        <Like />
+                        <Like />
+                        <Like />
                     </span>
                 </p>
                 <p>
                     Sexy
                     <span>
-                        <button onClick={sexy}>
-                            <Icon4 />
-                        </button>
-                        <button onClick={sexy}>
-                            <Icon4 />
-                        </button>
+                        <Heart />
+                        <Heart />
                     </span>
                 </p>
             </div>
