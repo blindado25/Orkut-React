@@ -22,9 +22,9 @@ export function CardDescricao() {
             <div className="centro-topo">
                 <p>
                     Fãs
-                    <span>
+                    <span className="fas">
                         <Star />
-                        <span className="fas">85</span>
+
                     </span>
                 </p>
                 <p>

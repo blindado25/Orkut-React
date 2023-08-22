@@ -2,3 +2,7 @@
     display: block;
     cursor: pointer;
 }
+
+.star-descricao {
+    display: flex;
+}

@@ -9,6 +9,8 @@ export function Star() {
 
     const [star, setStar] = useState(false);
 
+    const [count, setCount] = useState(85);
+
     function StarAlert() {
         alert("Fã?");
     }
@@ -16,22 +18,27 @@ export function Star() {
 
 
     return (
-        <button
-            className="card-descricao-button"
-            onClick={() => {
-                setStar(!star);
-            }}
-        >
-            {star ? (
-
-                <img alt="Star filled" src={IconFilled} />
-
-            ) : (
-                <button onClick={StarAlert}>
-                    <img alt="Star empty" src={IconEmpy} />
-                </button>
-            )}
-        </button>
+        <div className="star-descricao">
+            <button
+                className="card-descricao-button"
+                onClick={() => {
+                    setStar(!star);
+                }}
+            >
+                {star ? (
+                    <button onClick={() => setCount(count - 1)}>
+                        <img alt="Star filled" src={IconFilled} />
+                    </button>
+                ) : (
+                    <button onClick={StarAlert}>
+                        <button onClick={() => setCount(count + 1)}>
+                            <img alt="Star empty" src={IconEmpy} />
+                        </button>
+                    </button>
+                )}
+            </button>
+            {count}
+        </div>
 
     );
 }
